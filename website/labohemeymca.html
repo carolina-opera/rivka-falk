@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+<style>
+
+    /* צבע אחיד לכל הכפתורים */
+    .btn-whatsapp, .btn-phone, .btn-email { 
+        background-color: #C71585 !important; /* צבע ורוד כהה מקצועי */
+        transition: background 0.3s ease;
+    }
+
+    /* אפקט מעבר עכבר - שיהיה קצת יותר כהה כשנוגעים */
+    .btn:hover {
+        background-color: #8E2B4E !important;
+        transform: translateY(-2px);
+    }
+    
+    /* שמירה על האייקונים והטקסט בלבן לקריאות מקסימלית */
+    .btn {
+        color: white !important;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cloudflare.com">
+</HEAD>
+<div style="text-align: center; direction: rtl; padding: 30px; line-height: 1.6;">
+    <h2 style="margin: 5px 0; font-weight: normal; color: #c5a059;">לה בוהם ימק"א | La Boheme YMCA</h2>
+    <h1 style="margin: 0; font-size: 2.5rem;">רבקה פאלק | Rivka Falk</h1>
+    <h2 style="margin: 5px 0; font-weight: normal; color: #c5a059;">זמרת אופרה | Opera Singer</h2>
+    <p style="font-size: 1.2rem; margin: 5px 0;">סופרן ליריקו ספינטו / דרמטי | Lyrico Spinto / Dramatic Soprano</p>
+<div class="contact-container">
+    <!-- כפתור וואטסאפ -->
+    <a href="https://wa.me/972584375208" class="custom-pill-btn btn-whatsapp">
+        <svg style="width:24px;fill:white;margin-left:10px" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.81 9.81 0 0 0 12.04 2z"/></svg>
+        <div class="pill-text">
+            <span class="pill-label">וואטסאפ | Whatsapp</span>
+            <span class="pill-info">+972-58-4375208</span>
+        </div>
+    </a>
+
+    <!-- כפתור טלפון -->
+    <a href="tel:+972584375208" class="custom-pill-btn btn-phone">
+        <svg style="width:24px;fill:white;margin-left:10px" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <div class="pill-text">
+            <span class="pill-label">טלפון | Phone</span>
+            <span class="pill-info">+972-58-4375208</span>
+        </div>
+    </a>
+
+    <!-- כפתור מייל -->
+    <a href="mailto:jatul_pop@hotmail.com" class="custom-pill-btn btn-email">
+        <svg style="width:24px;fill:white;margin-left:10px" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <div class="pill-text">
+            <span class="pill-label">מייל | Email</span>
+            <span class="pill-info">jatul_pop@hotmail.com</span>
+        </div>
+    </a>
+</div>
+
+<style>
+    .contact-container {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        direction: rtl;
+    }
+
+    /* העיצוב המעוגל מהתמונה שלך */
+    .custom-pill-btn {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        padding: 8px 30px; /* פדינג רחב שיוצר את המראה המוארך */
+        border-radius: 50px; /* הופך את הקצוות לעגולים לגמרי (כמו בתמונה) */
+        font-family: sans-serif;
+        border: 1.5px solid rgba(255,255,255,0.2); /* מסגרת עדינה */
+        transition: all 0.3s ease;
+        min-width: 200px;
+    }
+
+    .pill-icon {
+        font-size: 1.4em;
+        margin-left: 12px; /* רווח מהטקסט */
+    }
+
+    .pill-text {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .pill-label {
+        font-size: 0.75em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .pill-info {
+        font-size: 0.95em;
+        font-weight: bold;
+    }
+
+    /* צבעים מותאמים - השתמשתי בוורוד הכהה לכפתורים כיוון שאהבת את החום הכהה בתמונה */
+    .btn-whatsapp { background-color: #25D366; }
+    .btn-phone { background-color: #0056b3; } /* כחול מקצועי */
+    .btn-email { background-color: #830644; } /* הוורוד הכהה המקצועי */
+
+    .custom-pill-btn:hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
+</style>
+
+</div>
+
+<BR><BR>
+
+
+<A HREF=9.PG>
+<IMG SRC=9.JPG WIDTH=200 HEIGHT=150>
+<A HREF=10.JPG>
+<IMG SRC=10.JPG WIDTH=200 HEIGHT=150>
+<A HREF=11.JPG>
+<IMG SRC=11.JPG WIDTH=200 HEIGHT=150>
+<A HREF=12.JPG>
+<IMG SRC=12.JPG WIDTH=200 HEIGHT=150>
+<A HREF=13.JPG>
+<IMG SRC=13.JPG WIDTH=200 HEIGHT=150>
+
+
+</HTML>
