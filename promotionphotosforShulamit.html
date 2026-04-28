@@ -22,7 +22,39 @@
     .btn {
         color: white !important;
     }
-</style>
+body {
+    text-align: center; /* ממרכז את כל התמונות והטקסט בדף */
+    background-color: #000; /* וודאי שהרקע נשאר שחור נקי */
+}
+
+img {
+    height: 150px; /* תוכלי לשנות ל-350px אם את רוצה גדול יותר */
+    width: auto;
+    margin: 15px; 
+    border: 1px solid #D4AF37;
+    border-radius: 8px;
+    vertical-align: middle; /* שומר על איזון גבהים בשורה */
+}
+/* עיצוב קישור החזרה */
+a[href="index.html"] {
+    display: inline-block;
+    color: #D4AF37;           /* צבע הזהב שלך */
+    text-decoration: none;    /* מבטל את הקו התחתון */
+    font-family: sans-serif;
+    font-size: 1.1em;
+    margin-top: 30px;         /* מוסיף רווח מהתמונה האחרונה */
+    padding: 10px 20px;
+    border: 1px solid #D4AF37; /* יוצר מסגרת דקה */
+    border-radius: 20px;      /* כפתור מעוגל */
+    transition: all 0.3s ease;
+}
+
+/* אפקט כשעוברים עם העכבר */
+a[href="index.html"]:hover {
+    background-color: #D4AF37;
+    color: #000;              /* הופך לשחור על זהב */
+}
+ 	</style>
 
 <link rel="stylesheet" href="https://cloudflare.com">
 </HEAD>
@@ -123,6 +155,25 @@
         opacity: 0.9;
         transform: scale(1.02);
     }
+/* הגדרות לכל התמונות בגלריה */
+img {
+    height: 350px;           /* קובע גובה אחיד לכולן - תוכלי לשנות את המספר לפי הטעם */
+    width: auto;             /* שומר על הפרופורציות (לא מותח תמונות לרוחב) */
+    margin: 15px;            /* יוצר את הריווח שביקשת בין התמונות */
+    border: 1px solid #D4AF37; /* מסגרת הזהב היוקרתית שלך */
+    border-radius: 8px;      /* פינות מעוגלות בעדינות */
+    vertical-align: middle;  /* מוודא שהתמונות מיושרות לפי האמצע שלהן */
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);  /* הגדלה קטנה ויוקרתית בריחוף */
+}
+
+/* מרכוז של כל שורת התמונות */
+body {
+    text-align: center;
+}
 </style>
 
 </div>
@@ -141,8 +192,11 @@
 <A HREF=5.jpeg>
 <IMG SRC=5.jpeg HEIGHT=150>
 <A HREF=6.jpeg>
-<IMG SRC=6.jpeg HEIGHT=150>
+<IMG SRC=7.jpeg HEIGHT=150>
 <A HREF=7.jpeg>
-<IMG SRC=7.jpeg WIDTH=150>
+<IMG SRC=6.jpeg WIDTH=150>
 
+<BR><BR>
+
+<a href="index.html" style="color: #D4AF37; text-decoration: none;">← חזרה לדף הבית</a>
 </HTML>
