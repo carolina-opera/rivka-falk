@@ -1,9 +1,9 @@
 <HTML>
 <HEAD>
-<title>קונצרט גאלה תאטרון ירושלים | Gala Concert at Jerusalem Theatre</title>
 <meta charset="UTF-8">
 <meta name="description" content="רבקה פאלק, זמרת אופרה ישראלית, סופרן לירי-ספינטו דרמטי. Rivka Falk, Israeli opera singer, Lyrico Spinto Dramatic Soprano.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- This is text.  <B>This is bold.</B>  <I>This is italic.</I>  <B><I>This is bold italic.</I></B> -->
 <style>
 
     /* צבע אחיד לכל הכפתורים */
@@ -22,48 +22,102 @@
     .btn {
         color: white !important;
     }
-body {
-    text-align: center; /* ממרכז את כל התמונות והטקסט בדף */
-    background-color: #000; /* וודאי שהרקע נשאר שחור נקי */
+/* עיצוב כללי לגלריה */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-img {
-    height: 150px; /* תוכלי לשנות ל-350px אם את רוצה גדול יותר */
-    width: auto;
-    margin: 15px; 
+/* עיצוב הקישור והטקסט */
+.gallery-item {
+    text-decoration: none !important; /* מבטל קו תחתון של קישור */
+    text-align: center;
+    width: 300px;
+}
+
+/* עיצוב התמונות */
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
     border: 1px solid #D4AF37;
-    border-radius: 8px;
-    vertical-align: middle; /* שומר על איזון גבהים בשורה */
-}
-/* עיצוב קישור החזרה */
-a[href="index.html"] {
-    display: inline-block;
-    color: #D4AF37;           /* צבע הזהב שלך */
-    text-decoration: none;    /* מבטל את הקו התחתון */
-    font-family: sans-serif;
-    font-size: 1.1em;
-    margin-top: 30px;         /* מוסיף רווח מהתמונה האחרונה */
-    padding: 10px 20px;
-    border: 1px solid #D4AF37; /* יוצר מסגרת דקה */
-    border-radius: 20px;      /* כפתור מעוגל */
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-/* אפקט כשעוברים עם העכבר */
-a[href="index.html"]:hover {
-    background-color: #D4AF37;
-    color: #000;              /* הופך לשחור על זהב */
+.gallery-item img:hover {
+    transform: scale(1.05);
+    border-color: #F1E5AC;
+}
+
+/* עיצוב הטקסט מתחת לתמונות - כאן נפתרת בעיית הצבע */
+.gallery-item span {
+    display: block;
+    color: #D4AF37 !important; /* צבע זהב לכל הטקסטים */
+    font-size: 0.9em;
+    margin-top: 8px;
+    font-family: sans-serif;
+}
+
+.gallery-item .title-bold {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+/* העיצוב של ראש הדף (הפס הצף) */
+header {
+  position: -webkit-sticky; /* תמיכה בדפדפני ספארי */
+  position: sticky;        /* הופך את האלמנט ל"דביק" */
+  top: 0;                   /* נדבק לקצה העליון */
+  z-index: 1000;            /* תמיד מעל הכל */
+  
+  /* הבורדו העמוק שלך */
+  background-color: #2c0a0a; 
+  
+  /* קו זהב דק ומעוצב בתחתית הפס */
+  border-bottom: 2px solid #D4AF37; 
+  
+  /* הגדרנו גובה מקסימלי לכל הפס הציף */
+  height: 100px;           
+  
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  
+  /* מוודא שהתוכן נשאר במרכז הגובה */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* העיצוב של הלוגו עצמו - כאן התיקון הקריטי! */
+header img {
+  /* הגדרנו גובה ספציפי ללוגו כשהוא צף. אתה יכול לשנות את המספר הזה. */
+  height: 80px;            
+  width: auto;             /* שומר על הפרופורציות */
+  
+  /* הוספת הילה זהובה עדינה כדי להבליט אותו מהרקע */
+  filter: drop-shadow(0px 0px 5px rgba(212, 175, 55, 0.4));
 }
 </style>
 
 <link rel="stylesheet" href="https://cloudflare.com">
 </HEAD>
 <body style="background-color: #2C0A0A; color: #f0e6e6;">
+<header>
+  <img src="logo1.png" alt="Carolina Opera Logo">
+</header>
+
+<main>
+  <section>
+    <h1>Welcome to Rivka's World</h1>
+    <p>Scroll down to see more...</p>
+  </section>
+  </main>
 <div style="text-align: center; direction: rtl; padding: 30px; line-height: 1.6;">
-    <h2 style="margin: 5px 0; font-weight: normal; color: #c5a059;">קונצרט גאלה תאטרון ירושלים | Gala Concert at Jerusalem Theatre</h2>
-    <h1 style="margin: 0; font-size: 2.5rem;">רבקה פאלק | Rivka Falk</h1>
-    <h2 style="margin: 5px 0; font-weight: normal; color: #c5a059;">זמרת אופרה | Opera Singer</h2>
-    <p style="font-size: 1.2rem; margin: 5px 0;">סופרן ליריקו ספינטו / דרמטי | Lyrico Spinto / Dramatic Soprano</p>
+    <h1 style="margin: 0; font-size: 2.5rem; color: #D4AF37">רבקה פאלק | Rivka Falk</h1>
+    <h2 style="margin: 5px 0; font-weight: normal; color: #C5A059;">זמרת אופרה | Opera Singer</h2>
+    <p style="font-size: 1.2rem; margin: 5px 0; color: #F1E5AC">סופרן ליריקו ספינטו / דרמטי | Lyrico Spinto / Dramatic Soprano</p>
 <div class="contact-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px;">
     <!-- כפתור וואטסאפ -->
     <a href="https://wa.me/972584375208" class="custom-pill-btn btn-whatsapp">

@@ -65,25 +65,61 @@
     font-weight: bold;
     font-size: 1.1em;
 }
+/* העיצוב של ראש הדף (הפס הצף) */
+header {
+  position: -webkit-sticky; /* תמיכה בדפדפני ספארי */
+  position: sticky;        /* הופך את האלמנט ל"דביק" */
+  top: 0;                   /* נדבק לקצה העליון */
+  z-index: 1000;            /* תמיד מעל הכל */
+  
+  /* הבורדו העמוק שלך */
+  background-color: #2c0a0a; 
+  
+  /* קו זהב דק ומעוצב בתחתית הפס */
+  border-bottom: 2px solid #D4AF37; 
+  
+  /* הגדרנו גובה מקסימלי לכל הפס הציף */
+  height: 100px;           
+  
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  
+  /* מוודא שהתוכן נשאר במרכז הגובה */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* העיצוב של הלוגו עצמו - כאן התיקון הקריטי! */
+header img {
+  /* הגדרנו גובה ספציפי ללוגו כשהוא צף. אתה יכול לשנות את המספר הזה. */
+  height: 80px;            
+  width: auto;             /* שומר על הפרופורציות */
+  
+  /* הוספת הילה זהובה עדינה כדי להבליט אותו מהרקע */
+  filter: drop-shadow(0px 0px 5px rgba(212, 175, 55, 0.4));
+}
 </style>
 
 <link rel="stylesheet" href="https://cloudflare.com">
 </HEAD>
 <body style="background-color: #2C0A0A; color: #f0e6e6;">
+<header>
+  <img src="logo1.png" alt="Carolina Opera Logo">
+</header>
+
+<main>
+  <section>
+    <h1>Welcome to Rivka's World</h1>
+    <p>Scroll down to see more...</p>
+  </section>
+  </main>
 <div style="text-align: center; direction: rtl; padding: 30px; line-height: 1.6;">
     <h1 style="margin: 0; font-size: 2.5rem; color: #D4AF37">רבקה פאלק | Rivka Falk</h1>
     <h2 style="margin: 5px 0; font-weight: normal; color: #C5A059;">זמרת אופרה | Opera Singer</h2>
     <p style="font-size: 1.2rem; margin: 5px 0; color: #F1E5AC">סופרן ליריקו ספינטו / דרמטי | Lyrico Spinto / Dramatic Soprano</p>
-    
-      <p style="font-size: 1.1rem; color: #B8860B; font-style: italic; direction: ltr; text-align: center;">
-        Rolul principal ca "Shulamit" la Opera de Dina Pruzhansky, Festivalul TES FEST, București Mai 2026
-<p dir="rtl" style="text-align: בקמאקר; font-family: sans-serif;">
-      <p style="font-size: 1.1rem; color: #F9E076; font-style: italic; direction: ltr; text-align: center;">
-    תפקיד ראשי כ"שולמית" באופרה מאת דינה פרוז'נסקי, פסטיבל <bdi>TES FEST</bdi>, בוקרשט מאי 2026
-</p>
-      <p style="font-size: 1.1rem; color: #D4AF37; font-style: italic; direction: ltr; text-align: center;">
-Lead role as "Shulamit" in the opera by Dina Pruzhansky, TES FEST Festival, Bucharest May 2026<BR>
-    </p>
+
 <div class="contact-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px;">
     <!-- כפתור וואטסאפ -->
     <a href="https://wa.me/972584375208" class="custom-pill-btn btn-whatsapp">
@@ -177,9 +213,6 @@ Lead role as "Shulamit" in the opera by Dina Pruzhansky, TES FEST Festival, Buch
 
 <BR><BR>
 <div class="gallery-container">
-<A HREF=springconcert.jpg>
-<IMG SRC=springconcert.jpg HEIGHT=200>
-    
     <!-- פריט 1 --> 	
     <a href="promotionphotosforShulamit.html" class="gallery-item">
         <img src="6.jpeg" HEIGHT=150 alt="Shulamit">
